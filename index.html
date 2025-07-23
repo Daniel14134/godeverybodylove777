@@ -5,6 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Isten szeret</title>
   <style>
+    <h2>Jelenlegi idő:</h2>
+<p id="ido" style="font-size: 1.5em; font-weight: bold;"></p>
+
+<script>
+  function frissitIdot() {
+    const most = new Date();
+    const ev = most.getFullYear();
+    const honap = String(most.getMonth() + 1).padStart(2, '0');
+    const nap = String(most.getDate()).padStart(2, '0');
+    const ora = String(most.getHours()).padStart(2, '0');
+    const perc = String(most.getMinutes()).padStart(2, '0');
+    const masodperc = String(most.getSeconds()).padStart(2, '0');
+
+    const idoSzoveg = `${ev}-${honap}-${nap} ${ora}:${perc}:${masodperc}`;
+    document.getElementById('ido').textContent = idoSzoveg;
+  }
+
+  setInterval(frissitIdot, 1000);
+  frissitIdot();
+</script>
+
     body {
       font-family: Georgia, serif;
       background: #fffaf4;
