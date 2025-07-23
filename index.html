@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Isten szeret</title>
+  <style>
+    body {
+      font-family: Georgia, serif;
+      background: #fffaf4;
+      color: #333;
+      text-align: center;
+      padding: 30px;
+    }
+    h1 {
+      color: #6d4c41;
+      font-size: 2.5em;
+    }
+    p {
+      font-size: 1.2em;
+      max-width: 700px;
+      margin: 20px auto;
+      line-height: 1.6;
+    }
+    .quote {
+      font-style: italic;
+      color: #777;
+      margin-top: 40px;
+    }
+    img {
+      margin-top: 30px;
+      max-width: 100%;
+      border-radius: 12px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Isten szeret</h1>
+
+  <p>
+    Melegként, másként élve is ugyanúgy szeret minket Isten.<br>
+    Mindannyian bűnös emberként születünk, szabad akarattal.<br>
+    Ez az akarat formál bennünket egyedivé – mások vagyunk, mégis egyformán értékesek az Ő szemében.
+  </p>
+
+  <div class="quote">
+    „Mert Isten nem személyválogató.” – Apostolok Cselekedetei 10:34
+  </div>
+
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Open_bible_with_rainbow_flag.jpg/800px-Open_bible_with_rainbow_flag.jpg" alt="Biblia és szivárvány">
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Imaajánló</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #fffaf4;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #6d4c41;
+      color: #fff;
+      padding: 10px 0;
+      text-align: center;
+    }
+    nav {
+      background: #8d6e63;
+      padding: 10px 0;
+      text-align: center;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 15px;
+      display: inline-block;
+    }
+    nav a:hover {
+      background: #5c3d2e;
+    }
+    main {
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Isten szeret</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Főoldal</a>
+    <a href="ima.html">Hasznos imák</a>
+    <a href="imak.html">Imaajánló</a>
+    <a href="másság.html">A vallás és a Másság</a>
+    <a href="kapcsolat.html">Vedd fel a kapcsolatot</a>
+  </nav>
+
+  <main>
+    <h2>Imaajánló</h2>
+    <p>Üdvözlünk az Imaajánló oldalon!</p>
+    <p🌈 1. Ima az elfogadásért és önmagam szeretetéért
+Uram, néha nehéz elfogadni önmagamat, amikor a világ elutasít.
+De tudom, hogy Te úgy szeretsz, ahogy vagyok – minden hibámmal, kérdésemmel és küzdelmemmel együtt.
+Kérlek, segíts, hogy én is el tudjam fogadni magamat.
+Adj békét a szívembe, és mutasd meg, hogy értékes vagyok a Te szemedben. Ámen.
+
+💛 2. Ima a mások ítéletei ellenére való békéért
+Mennyei Atyám,
+tudod, hogy fáj, amikor elutasítanak, megítélnek, vagy kirekesztenek.
+De Te soha nem fordulsz el tőlem.
+Kérlek, segíts, hogy ne haraggal válaszoljak a bántásra, hanem szeretettel és alázattal.
+Adj erőt ahhoz, hogy megőrizzem a hitem, és ragaszkodjak Hozzád minden helyzetben. Ámen.
+
+🕊️ 3. Ima a szabad akaratért és Isten vezetéséért
+Uram, köszönöm, hogy szabad akaratot adtál.
+Néha úgy érzem, nehéz helyesen dönteni, vagy mások megfelelését keresem.
+De Te ismersz engem teljesen, és látod a szívem.
+Kérlek, vezess engem a Te utadon, és taníts szeretni, elfogadni és remélni.
+Ne hagyj magamra, és segíts világítani ott, ahol sötétség van. Ámen.
+
+✨ 4. Ima azokért, akik nem értenek meg
+Uram, vannak, akik nem értik meg, milyen az életem.
+Talán félnek tőlem, talán elutasítanak.
+De kérlek, segíts, hogy ne haragudjak rájuk.
+Adj nekik is szeretetet, világosságot, és készséget az elfogadásra.
+És add, hogy mindig maradjon bennem remény. Ámen.
+
+❤️ 5. Ima a szeretetért és méltóságért
+Istenem, szeretetből teremtettél, és nem véletlenül olyannak, amilyen vagyok.
+Segíts, hogy soha ne szégyelljem azt, akinek alkottál.
+Add, hogy másokat is szeretettel tudjak nézni, és megtaláljam a helyem a világban.
+Kérlek, emelj fel, amikor megtörök, és adj méltóságot, ha lenéznek.
+Mert én a Te gyermeked vagyok. Ámen.
+  </main>
+<h2>Jelenlegi idő:</h2>
+<p id="ido" style="font-size: 1.5em; font-weight: bold;"></p>
+
+<script>
+  function frissitIdot() {
+    const most = new Date();
+    const ev = most.getFullYear();
+    const honap = String(most.getMonth() + 1).padStart(2, '0');
+    const nap = String(most.getDate()).padStart(2, '0');
+    const ora = String(most.getHours()).padStart(2, '0');
+    const perc = String(most.getMinutes()).padStart(2, '0');
+    const masodperc = String(most.getSeconds()).padStart(2, '0');
+
+    const idoSzoveg = `${ev}-${honap}-${nap} ${ora}:${perc}:${masodperc}`;
+    document.getElementById('ido').textContent = idoSzoveg;
+  }
+
+  setInterval(frissitIdot, 1000); // frissíti másodpercenként
+  frissitIdot(); // azonnal lefut egyszer
+</script>
+
+
+</body>
+</html>
+
+  <h2>Zene</h2>
+  <audio controls>
+    <source src="zene.mp3" type="audio/mpeg">
+  </audio>
+
